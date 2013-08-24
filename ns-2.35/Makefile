@@ -71,7 +71,7 @@ INCLUDES = \
 	-I./diffusion3/lib/main -I./diffusion3/lib \
 	-I./diffusion3/lib/nr -I./diffusion3/ns \
 	-I./diffusion3/filter_core -I./asim/ -I./qs \
-	-I./diffserv -I./satellite \
+	-I./diffserv -I./satellite -I./antnet \
 	-I./wpan
 
 
@@ -333,6 +333,7 @@ OBJ_CC = \
 	wpan/p802_15_4sscs.o wpan/p802_15_4timer.o \
 	wpan/p802_15_4trace.o wpan/p802_15_4transac.o \
 	apps/pbc.o \
+	antnet/lib/antnet.o antnet/lib/antnet_common.o antnet/lib/antnet_rtable.o \
 	$(OBJ_STL)
 
 
